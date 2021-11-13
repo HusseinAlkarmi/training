@@ -2,13 +2,14 @@
     margin: 0px;
     scroll-behavior: smooth;
     }
-
+   
     body{
-        background: #D3CCE3;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-    }
+       background: #D3CCE3;  /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
+   }
+   
    nav{
    background-color:rgb(31,26,26) ;
    width:100%;
@@ -60,6 +61,7 @@
        height: 250px;
        
        position: relative;
+       top: 500px;
        bottom: 0px;
        
    
@@ -134,6 +136,7 @@
        footer article div{
            margin-right: 52px;
        }
+
    .mainDiv .secondDiv .slide img{
    width:100%;
    height:550px;
@@ -210,10 +213,11 @@
        transform: translatex(-50%);
        color: black;
        border-bottom: 3px solid purple;
-       padding: 5px;
-       margin: 10px 8px;
+       padding: 5px 10px;
+       margin: 10px 0px;
         
-    }           
+    }    
+   
    .homeCard{
        /* background-color: red; */
        width: 100%;
@@ -223,6 +227,7 @@
        display: flex;
        justify-content: space-around;
    }
+   
     .cards img{
    width: 320px;
    height: 250px;
@@ -240,16 +245,19 @@
         overflow: hidden;
         box-shadow: 0px 5px 1.7em grey;
     }
+   
     .cards div:nth-of-type(1){
        overflow: hidden;
        height:260px;
     }
+   
     .cards div img:hover{
     height: 270px;
     width:350px;
     margin-left: -10px;
     opacity: 0.8;
     }
+   
    .cards div:nth-of-type(2){
    padding: 10px;
    }
@@ -260,10 +268,12 @@
    border-radius: 12px;
    
    }
+   
    aside img:hover {
        opacity: 0.9;
    
    }
+   
    #last{
    position: relative;
    top:880px;
@@ -274,9 +284,11 @@
    padding:40px 80px 40px 0px;
    font-size: larger;
    }
+   
    aside{
    padding:0px 80px;
    }
+   
    #button{
    background-color: rgb(31,26,26);
    color: white;
@@ -297,10 +309,107 @@
    box-shadow: 0px 5px 1.7em purple;
    
    }
+   /*product page*/
    
+   #backgroundImg{
+   background-image: url(img/purple1.jpg);
+   width:100%;
+   height:550px;
+   position: absolute;
+   top:60px;
+   background-size: cover;
+   box-shadow: 0px -5px 1.7em purple;
    
+   }
+   #backgroundImg #productTitle{
+   display: inline-block;
+   line-height: 550px;
+   position: absolute;
+   left:50%;
+   transform:translateX(-50%);
+   font-size: 59px;
+   font-family: 'Pacifico', cursive;
+   color:purple;
+   -webkit-text-stroke: 0.9px white ;
+   }
    
-   
+   .productMainDiv .productSecondDiv .productSlide img{
+       width:250px;
+       height:230px;
+       object-fit: cover;
+       
+       }
+
+       .productMainDiv{
+       width:90%;
+       height:300px;
+       overflow: hidden;
+       /* display: flex;
+       justify-content:space-between; */
+       position: absolute;
+       top: 780px;
+       left: 50%;
+       transform:translateX(-50%);
+       box-shadow: 0px -5px 1.7em purple;
+       }
+       .productNavigation{
+       position: absolute;
+       bottom: 0px;
+       left:50%;
+       transform:translateX(-50%);
+       display:flex;
+       }
+       .productBar{
+       width:20px;
+       height:10px;
+       border:2px solid black;
+       border-radius: 10%;;
+       margin:9px;
+       cursor:pointer;
+       transition: 0.4s;
+       }
+       .productBar:hover{
+           background-color:rgb(85, 81, 81);
+       }
+
+       .productSecondDiv input[name="r"]{
+       position: absolute;
+       visibility: hidden ;
+       }
+       .productSecondDiv{
+        width:200%;
+        margin: 4px 30px;
+        height: 100%;
+        display:flex;
+       }
+
+       .productSlide{
+       width:12%;
+       transition: 0.6s;;
+       
+       }
+       .productSlide img{
+       width:100%;
+       height:100%;
+       
+       }
+       #r1Product:checked ~ .s1Product{
+       margin-left: 1.5%;
+       } 
+       #r2Product:checked ~ .s1Product{
+           margin-left: -47%;
+           /* margin-right: 1%; */
+       } 
+       /* #r3:checked ~ .s1Product{
+           margin-left: -40%;
+           } 
+        #r4:checked ~ .s1Product{
+        margin-left: -60%;
+               } 
+        #r5:checked ~ .s1Product{
+        margin-left:-80% ;
+                   }  */
+       
    
    
    
