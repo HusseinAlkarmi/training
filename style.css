@@ -568,3 +568,7 @@
   position: absolute;
   top:125%;
   }
+
+  #locationFirst aside img{
+      height: 400px;
+  }
